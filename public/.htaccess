@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule img/[0-9]+/.+\.jpg$ img.php
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.(php|html|js|css|pdf|gif|png|jpg|jpeg|eot|svg|ttf|woff|woff2|xml|swf|wsdl|air|ico|apk|json|map)$
+RewriteRule ^(.+)$ $1.php [L]
+
+deny from all
+allow from 219.110.55.46

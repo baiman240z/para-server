@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "core\\": "app/core/",
+      "": "app/classes/"
+    }
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "ext-openssl": "*"
+  }
+}
